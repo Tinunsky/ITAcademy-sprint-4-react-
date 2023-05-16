@@ -288,6 +288,7 @@ describe('Function "orderByYear"', () => {
 
 // Exercise 6
 describe('Function "moviesAverageByCategory"', () => {
+  
   it('should be declared', () => {
     expect(typeof moviesAverageByCategory).toBe('function');
   });
@@ -340,6 +341,7 @@ describe('Function "moviesAverageByCategory"', () => {
     expect(moviesAverageByCategory([{ score: 6 }, { score: '' }, {}])).toBe(2);
   });
   */
+ 
   it('should return average even if one of the movies does not have score', () => {
     expect(moviesAverageByCategory([
       { score: 5,
@@ -351,7 +353,6 @@ describe('Function "moviesAverageByCategory"', () => {
     ],
     'Action')).toBe(5);
   });
-
 });
 
 // Exercise 7
